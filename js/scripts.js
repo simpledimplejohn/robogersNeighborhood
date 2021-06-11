@@ -11,12 +11,11 @@ $(document).ready(function() {
     
     function robogerize(array) {
       
-      
       for(let i = 0; i < array.length; i++) {
         let firstLetter = array[i].charAt(0);
         
         if(comparator.indexOf(firstLetter.toUpperCase()) !== -1) {
-          array[i] = array[i] + "ay";
+          array[i] =  "beep";
         } 
         
 
