@@ -4,22 +4,25 @@ $(document).ready(function() {
     let lowEnd = 0;
     let highEnd = $('#number').val();
     var array = [];
+    let newArray = [];
     function robogerize(array) {
       while(lowEnd <= highEnd) {
         array.push(lowEnd++);
       }
+      
       array.forEach(function(element) {
         if (element === "3") {
-          array.push("Won't you be my neighbor");
+          newArray.push("Won't you be my neighbor");
+          console.log(element);
         }
       });
-      return array;
+      return newArray;
     }
     
 
 
 
-    let robogerized = robogerize(array)
+    let robogerized = robogerize(newArray)
 
     $("#original").text(highEnd);
     $("#robogerized").text(robogerized);

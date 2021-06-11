@@ -1,4 +1,45 @@
-_Specifications_
+# _Roboger's Neighborhood_
+
+#### _A website that demonstrates looping through arrays_
+
+#### By _**John Blalock**_
+
+## Technologies Used
+
+* _HTML_
+* _CSS_
+* _Bootstrap_
+* _Java Script_
+* _jQuery_
+
+## Description
+
+_This website demonstrates different ways of looping through an array and applying branching._
+
+## Setup/Installation Requirements
+
+* _Clone repository form github_
+* _Open index.html_
+* _Copy path to Chrome Browser_
+
+
+## Known Bugs and Future Changes
+
+
+
+## License
+
+_[MIT](https://opensource.org/licenses/MIT)_
+
+## Github Pages Link
+
+[Portfolio](https://simpledimplejohn.github.io/robogersNeighborhood)
+
+## Contact Information
+
+_simpledimplejohn@gmail.com_
+
+## Specifications ##
 
 Describe: robogerize()
 Test: "It should return an array with a 0 if the number 0 is inputted"
