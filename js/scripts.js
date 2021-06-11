@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  let comparator = ['1', '2', '3', '4', '5'];
+  let num1 = "1";
   
 
   $("#number-form").submit(function(event) {
@@ -12,13 +12,11 @@ $(document).ready(function() {
     function robogerize(array) {
       
       for(let i = 0; i < array.length; i++) {
-        let firstLetter = array[i].charAt(0);
+        let lookForOne = array[i];
         
-        if(comparator.indexOf(firstLetter.toUpperCase()) !== -1) {
+        if(num1.indexOf(lookForOne) !== -1) {
           array[i] =  "beep";
         } 
-        
-
       }
       return array;
     }
