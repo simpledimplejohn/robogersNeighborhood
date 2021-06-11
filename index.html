@@ -8,20 +8,23 @@
   <title>Roboger's Neighborhood</title>
 </head>
 <body>
-  <h1>Roboger's Neighborhood</h1>
-  <div>
-    <form id="number-form">
-      <div class="form">
-        <label for="number">Enter a sentence for translation: </label>
-        <input id="number" class="form-control" type="text">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Roboger's Neighborhood</h1>
+      <br>
+      <p>A nonsensical numbers game</p>
+    </div>
+      <div class="card-body" id=quiz>
+        <form id="number-form">
+          <div class="form">
+            <label for="number">Enter a sentence for translation: </label>
+            <input id="number" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn-success">Answer</button>
+        </form>
+        <p>First number sequence: <span id="original"></span></p>
+        <p>Roboger-ized: <span id="robogerized"></span></p>
       </div>
-      <button type="submit" class="btn-success">Answer</button>
-    </form>
-    <p>First number sequence: <span id="original"></span></p>
-    <p>Roboger-ized: <span id="robogerized"></span></p>
-  </div>
-</div>
-
 
   </div>
 </body>
