@@ -1,22 +1,17 @@
 $(document).ready(function() { 
   $("#number-form").submit(function(event) {
     event.preventDefault();
-    let lowEnd = 0;
-    let highEnd = $('#number').val();
-    var array = [];
+    
+    let number = $('#number').val();
+    console.log(number);
     let newArray = [];
-    function robogerize(array) {
-      while(lowEnd <= highEnd) {
-        array.push(lowEnd++);
+    
+    function robogerize(number) {
+      let arr = [];
+      for (var i = 0; i <= number; i ++) {
+        arr.push(i);
       }
-      
-      array.forEach(function(element) {
-        if (element === "3") {
-          newArray.push("Won't you be my neighbor");
-          console.log(element);
-        }
-      });
-      return newArray;
+      return number;
     }
     
 
@@ -24,7 +19,7 @@ $(document).ready(function() {
 
     let robogerized = robogerize(newArray)
 
-    $("#original").text(highEnd);
+    $("#original").text(number);
     $("#robogerized").text(robogerized);
   });
 });
