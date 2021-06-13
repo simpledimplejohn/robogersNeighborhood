@@ -7,12 +7,14 @@ $(document).ready(function() {
       let arr = [];
       let num = number
       for (let i = 0; i <= num; i++) {
-          arr.push(i);
-          let compare = arr[i];
-          if(compare === 3) {
-            arr[i] = "Won't you be my neighbor?";
-          } 
-          
+        arr.push(i);
+        let compare = arr[i];
+        if(compare === 3) {
+          arr[i] = "Won't you be my neighbor?";
+        } if (compare === 2) {
+          arr[i] = "Boop!";
+        }
+        
       }
       return arr;
     }
