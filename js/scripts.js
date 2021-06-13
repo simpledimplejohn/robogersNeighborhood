@@ -3,15 +3,15 @@ $(document).ready(function() {
     event.preventDefault();
     let value = $("#number").val();
 
-    function testExample(example) {
+    function rogoberize(number) {
       let arr = [];
-      let num = example
+      let num = number
       for (let i = 0; i <= num; i++) {
           arr.push(i);
       }
       return arr;
     }
-    let output = testExample(value)
+    let output = rogoberize(value)
 
 
     $("#original").text(value);
