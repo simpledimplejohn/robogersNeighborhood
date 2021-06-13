@@ -9,8 +9,8 @@ $(document).ready(function() {
       for (let i = 0; i <= num; i++) {
           arr.push(i);
           let compare = arr[i];
-          if(compare === 1) {
-            arr[i] = "Beep!";
+          if(compare === 3) {
+            arr[i] = "Won't you be my neighbor?";
           } 
           
       }
