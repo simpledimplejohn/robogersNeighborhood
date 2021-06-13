@@ -1,32 +1,31 @@
 $(document).ready(function() { 
   $("#number-form").submit(function(event) {
     event.preventDefault();
-    
-    let value = "5";
-    function robogerize(number) {
-      for (var i = 0; i <= number; i ++) {
-        let Array = []
-        let newArray = Array.push(i);
+    let value = $("#number").val();
+
+    function testExample(example) {
+      let arr = [];
+      let num = example
+      for (let i = 0; i <= num; i++) {
+          arr.push(i);
       }
-      return newArray;
+      return arr;
     }
-    console.log(robogerize(value))
+    let output = testExample(value)
+
 
     $("#original").text(value);
-    $("#robogerized").text(newArray);
+    $("#robogerized").text(output);
   });
 });
 
 
-function testExample(example) {
-  let arr = [];
-  let num = example
-  for (var i = 0; i <= num; i++) {
-      arr.push(i);
-  }
-  console.log(arr);
-}
-
-
-
-console.log(testExample(31))
+// function testExample(example) {
+//   let arr = [];
+//   let num = example
+//   for (let i = 0; i <= num; i++) {
+//       arr.push(i);
+//   }
+//   console.log(arr);
+// }
+// console.log(testExample(31))
