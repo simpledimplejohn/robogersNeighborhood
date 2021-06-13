@@ -14,7 +14,7 @@
 
 ## Description
 
-_This website demonstrates different ways of looping through an array and applying branching._
+_This website demonstrates different ways of looping through an array and applying branching by replacing the number 1 with "Beep!", the number 2 with "Boop!", and the number 3 with "Won't you be my neighbor?"._
 
 ## Setup/Installation Requirements
 
