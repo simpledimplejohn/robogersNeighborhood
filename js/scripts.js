@@ -13,6 +13,8 @@ $(document).ready(function() {
           arr[i] = "Won't you be my neighbor?";
         } if (compare === 2) {
           arr[i] = "Boop!";
+        } if (compare === 1) {
+          arr[i] = "Beep!";
         }
         
       }
