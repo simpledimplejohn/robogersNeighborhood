@@ -31,6 +31,8 @@ _This website demonstrates different ways of looping through an array and applyi
 
 _[MIT](https://opensource.org/licenses/MIT)_
 
+Copyright (c) 2021 John Blalock
+
 ## Github Pages Link
 
 [Portfolio](https://simpledimplejohn.github.io/robogersNeighborhood)
@@ -52,3 +54,11 @@ Expect(robogerize(5).toEqual([0, 1, 2, 3, 4, 5]);
 Describe: robogerize()
 Test: "It should return search the returned array and replace the number 3 with "Won't you be my neighbor"
 Expect(robogerize(5).toEqual([0, 1, 2, "Won't you be my neighbor?, 4, 5]);
+
+Describe: robogerize()
+Test: "It should return search the returned array and replace the number 2 with "Boop!"
+Expect(robogerize(5).toEqual([0, 1, "Boop!", "Won't you be my neighbor?, 4, 5]);
+
+Describe: robogerize()
+Test: "It should return search the returned array and replace the number 1 with "Beep!"
+Expect(robogerize(5).toEqual([0, "Beep!", "Boop!", "Won't you be my neighbor?, 4, 5]);
