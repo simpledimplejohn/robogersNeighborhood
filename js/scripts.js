@@ -8,6 +8,11 @@ $(document).ready(function() {
       let num = number
       for (let i = 0; i <= num; i++) {
           arr.push(i);
+          let compare = arr[i];
+          if(compare === 1) {
+            arr[i] = "Beep!";
+          } 
+          
       }
       return arr;
     }
@@ -18,14 +23,3 @@ $(document).ready(function() {
     $("#robogerized").text(output);
   });
 });
-
-
-// function testExample(example) {
-//   let arr = [];
-//   let num = example
-//   for (let i = 0; i <= num; i++) {
-//       arr.push(i);
-//   }
-//   console.log(arr);
-// }
-// console.log(testExample(31))
