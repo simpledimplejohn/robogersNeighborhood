@@ -2,24 +2,31 @@ $(document).ready(function() {
   $("#number-form").submit(function(event) {
     event.preventDefault();
     
-    let number = $('#number').val();
-    console.log(number);
-    let newArray = [];
-    
+    let value = "5";
     function robogerize(number) {
-      let arr = [];
       for (var i = 0; i <= number; i ++) {
-        arr.push(i);
+        let Array = []
+        let newArray = Array.push(i);
       }
-      return number;
+      return newArray;
     }
-    
+    console.log(robogerize(value))
 
-
-
-    let robogerized = robogerize(newArray)
-
-    $("#original").text(number);
-    $("#robogerized").text(robogerized);
+    $("#original").text(value);
+    $("#robogerized").text(newArray);
   });
 });
+
+
+function testExample(example) {
+  let arr = [];
+  let num = example
+  for (var i = 0; i <= num; i++) {
+      arr.push(i);
+  }
+  console.log(arr);
+}
+
+
+
+console.log(testExample(31))
