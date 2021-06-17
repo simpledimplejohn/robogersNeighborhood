@@ -1,23 +1,17 @@
-// Business Logic
-
 function rogoberize(number) {
   let arr = [];
   let num = number
-  for (let i = 0; i <= num; i++) {
+  for (let i = 0; i <= num; i++) { 
     arr.push(i);
-    
-    if (i === 3) {
-      arr[i] = "Won't you be my neighbor?";
-    } else if (i === 2) {
-      arr[i] = "Boop!";
-    } else if (i === 1) {
-      arr[i] = "Beep!";
-    }       
+    string = arr.join(", ");
+    string1 = string.replace(/1/g, "beep!");
+    string2 = string1.replace(/2/g, "boop!");
+    string3 = string2.replace(/3/g, "Won't you be my neighbor?")
   }
-  return arr;
+  return string3
 }
 
-// UI Logic
+
 $(document).ready(function() { 
   $("#number-form").submit(function(event) {
     event.preventDefault();
@@ -27,6 +21,7 @@ $(document).ready(function() {
     $("#robogerized").text(output);
   });
 });
+
 
 
 
