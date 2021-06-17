@@ -4,15 +4,13 @@ function rogoberize(number) {
   for (let i = 0; i <= num; i++) { 
     arr.push(i);
     i= i.toString();
-    if (i.includes("1")) {
-      arr.splice(i, 1, "beep!")
+    if (i.includes("3")) {
+      arr.splice(i, 1, "Won't you be my neighbor?");
+    } else if (i.includes("2")) {
+      arr.splice(i, 1, "boop!");
+    } else if (i.includes("1")) {
+      arr.splice(i, 1, "beep!");
     }
-
-
-    // string = arr.join(", ");
-    // string1 = string.replace(/1/g, "beep!");
-    // string2 = string1.replace(/2/g, "boop!");
-    // string3 = string2.replace(/3/g, "Won't you be my neighbor?")
   }
   return arr
 }
