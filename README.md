@@ -31,7 +31,7 @@ _This website demonstrates different ways of looping through an array and applyi
 
 _[MIT](https://opensource.org/licenses/MIT)_
 
-Copyright (c) 2021 John Blalock
+_Copyright (c) 2021 John Blalock_
 
 ## Github Pages Link
 
