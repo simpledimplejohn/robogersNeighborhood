@@ -1,3 +1,4 @@
+// Business Logic
 function rogoberize(number) {
   let arr = [];
   let num = number
@@ -15,7 +16,7 @@ function rogoberize(number) {
   return arr
 }
 
-
+// UI Logic
 $(document).ready(function() { 
   $("#number-form").submit(function(event) {
     event.preventDefault();
